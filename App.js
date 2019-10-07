@@ -43,10 +43,19 @@ const RootStack = createStackNavigator(
     headerTintColor: '#fff',
     headerTitleStyle: {
         fontWeight: 'bold',
-    }
+    },
+    drawerIcon: () => (
+      <Image
+        source={require('./icons/menu.png')}
+        style={[styles.icon, { tintColor: "#ffffff" }]}
+      />
+    ),
   }
 }
 );
+
+
+
 
 const AppContainer = createAppContainer(RootStack);
 
@@ -55,3 +64,10 @@ export default class App extends React.Component {
     return <AppContainer />;
   }
 }
+
+const styles = StyleSheet.create({
+  icon:{
+    height:24,
+    width:24,
+  },
+})
