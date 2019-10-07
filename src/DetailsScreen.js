@@ -22,6 +22,8 @@ class DetailsScreen extends React.Component {
       return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
           <Text>Details Screen</Text>
+          <Text>User ID: {JSON.stringify(navigation.getParam('userID', 'NO-ID'))}</Text>
+          <Text>{JSON.stringify(navigation.getParam('otherParam', ''))}</Text>
           <Button
           title="Go back"
           onPress={() => this.props.navigation.goBack()}

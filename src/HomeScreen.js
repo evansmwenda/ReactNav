@@ -25,7 +25,11 @@ class HomeScreen extends React.Component {
                 <Text>Home Screen</Text>
                 <Button
                     title="Go to details"
-                    onPress={() => this.props.navigation.navigate('Details')}
+                    onPress={() => {this.props.navigation.navigate('Details',{
+                        userID:404,
+                        otherParam:'Coded by Evans'
+                    });
+                }}
                     />
             </View>
         )
