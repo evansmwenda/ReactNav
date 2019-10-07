@@ -8,13 +8,6 @@ import {
 class HomeScreen extends React.Component {
     static navigationOptions = {
         title: 'Home',
-        headerStyle: {
-            backgroundColor: '#03A9F4',
-        },
-        headerTintColor: '#fff',
-        headerTitleStyle: {
-            fontWeight: 'bold',
-        },
     };
 
 

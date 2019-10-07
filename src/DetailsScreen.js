@@ -9,14 +9,7 @@ import {
 class DetailsScreen extends React.Component {
   static navigationOptions = {
     title: 'Details',
-    headerStyle: {
-        backgroundColor: '#03A9F4',
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-        fontWeight: 'bold',
-    },
-};
+    };
 
     render() {
       return (
