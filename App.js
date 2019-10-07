@@ -35,7 +35,7 @@ const RootStack = createStackNavigator(
   Details: DetailsScreen,
 },
 {
-  initialRouteName: 'Details',
+  initialRouteName: 'Home',
 }
 );
 
